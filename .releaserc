@@ -10,6 +10,12 @@
       }
     ],
     [
+      "@semantic-release/git",
+      {
+        "assets": ["CHANGELOG.md"]
+      }
+    ],
+    [
       "@semantic-release/github",
       {
         "githubUrl": "https://github.com"
