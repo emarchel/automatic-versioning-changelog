@@ -8,6 +8,12 @@
       {
         "githubUrl": "https://github.com"
       }
+    ],
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "docs/CHANGELOG.md"
+      }
     ]
   ]
 }
