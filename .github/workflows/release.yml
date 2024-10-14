@@ -20,8 +20,8 @@ jobs:
       #   with:
       #   cache: npm
       #    node-version: lts/*
-      - run: npm clean-install
-      - run: corepack npm audit signatures
+      #- run: npm clean-install
+      #- run: corepack npm audit signatures
       - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
