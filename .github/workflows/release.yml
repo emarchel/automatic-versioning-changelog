@@ -20,9 +20,9 @@ jobs:
         with:
           cache: npm
           node-version: lts/*
-      #- run: npm clean-install
+      - run: npm install -g semantic-release @semantic-release/github @semantic-release/changelog conventional-changelog-conventionalcommits @semantic-release/commit-analyzer @semantic-release/git
       #- run: corepack npm audit signatures
-      - run: npx semantic-release
+      - run: semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           #NPM_TOKEN: ${{ secrets.SEMANTIC_RELEASE_BOT_NPM_TOKEN }}
